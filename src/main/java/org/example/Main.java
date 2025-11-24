@@ -12,7 +12,7 @@ public class Main {
         try {
             // Создаём временную HTML-страницу
             Path tempHtml = Files.createTempFile("speech_recognition_", ".html");
-            tempHtml.toFile().deleteOnExit(); // Удалится после завершения
+            tempHtml.toFile().deleteOnExit();
 
             String htmlContent = """
             <!DOCTYPE html>
